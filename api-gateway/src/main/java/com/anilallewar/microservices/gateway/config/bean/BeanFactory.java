@@ -14,6 +14,7 @@ public class BeanFactory {
 		return new WebMvcConfigurerAdapter() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
+				//testing...
 				registry.addMapping("/**").allowedMethods("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH")
 						.allowedHeaders("*");
 			}
